@@ -9,11 +9,9 @@ var HelloWorld = function() {};
 HelloWorld.prototype.hello = function(input) {
 if (input === ''){
   return 'Hello, World!'
-}else if (input === 'Bob'){
-  return 'Hello, Bob!'
 }else{
-  return 'Hello, Sally!'
+  return 'Hello, ' + input + '!'
+  }
 }
-};
 
 module.exports = HelloWorld;
